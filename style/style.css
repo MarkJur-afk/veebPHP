@@ -28,7 +28,6 @@ ul {
     background-color: #333333;
 }
 
-/* Style links in topnav */
 ul li a {
     display: block;
     color: #f1f1f1;
@@ -36,9 +35,25 @@ ul li a {
     text-decoration: none;
 }
 
-/* Change color on hover */
 ul li a:hover {
     background-color: #dddddd;
     color: black;
+}
+
+div.flex-container > div{
+    margin: 10px;
+    flex: 1;
+    padding: 10px;
+}
+
+div.flex-container{
+    margin-left: 10%;
+    display: flex;
+    flex-direction: row;
+}
+
+img {
+    width: 200px;
+
 }
 

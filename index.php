@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <title>Mark Jurgen PHP tööd</title>
     <link rel="stylesheet" href="style/style.css">
+    <script src="js/muusikaScript.js"></script>
+    <link rel="stylesheet" href="style/muusikaStyle.css">
+    <script src="js/opilasedJS.js"></script>
+    <link rel="stylesheet" href="style/opilaseStyle.css">
+    <script src="js/js.js"></script>
 </head>
 <body>
 <?php
@@ -15,11 +20,26 @@
 //navigeerimismenüü
 include("nav.php");
 ?>
-<main>
-    <section>
+<div class="flex-container"> 
 
-    </section>
-</main>
+    <div>
+        <?php
+        if(isset($_GET["link"])){
+            include("content/".$_GET["link"]);}
+        else{
+            include("content/avaleht.php");
+        }
+        ?>
+    </div>
+    <div>
+        <img src="image/gragas.png" alt="pilt">
+        <input type="button" value="TÄNA ON" onclick="showDate()"> <br>
+        <input type="button" value="Minu sünnipäevani" onclick="daysToBirthday()">
+    </div>
+</div>
+
+
+
 
 
 <?php
