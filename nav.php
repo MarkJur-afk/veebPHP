@@ -24,6 +24,13 @@
                 </a>
             </strong>
         </li>
+        <li>
+            <strong>
+                <a href="?link=ajaFunktsioonid.php">
+                    JS: Aja Funktsioonid
+                </a>
+            </strong>
+        </li>
 
     </ul>
 </nav>

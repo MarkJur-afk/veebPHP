@@ -31,8 +31,9 @@ include("nav.php");
         }
         ?>
     </div>
+    <br>
     <div>
-        <img src="image/gragas.png" alt="pilt">
+        <img src="image/gragas.png" alt="pilt"> <br>
         <input type="button" value="TÄNA ON" onclick="showDate()"> <br>
         <input type="button" value="Minu sünnipäevani" onclick="daysToBirthday()">
     </div>
