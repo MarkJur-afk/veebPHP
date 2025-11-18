@@ -28,4 +28,21 @@
     </pre>
 </li>
 <?php
+
 echo "<li>GITHUB projektiga sidumine";
+echo "<pre>";
+echo "git remote add origin git@github.com:MarkJur-afk/veebPHP.git
+
+echo php1tund>git branch -M main
+
+php1tund>git push -u origin main";
+echo "</pre>";
+echo "</li>";
+
+echo "<li>Projekti kloonimine desktopi. <br>
+* Kontrolli, et id_rsa võti on olemas .ssh kaustas<br>
+* GIT CMD on lahti ja <br>";
+echo "git clone https://github.com/markjur/veebPHP.git";
+echo "</pre>";
+echo "</li>";
+echo "</ol>";
