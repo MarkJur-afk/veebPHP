@@ -1,8 +1,32 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <title>Mark Jurgen PHP tööd</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
 <?php
-    echo "<h1>";
-    echo "Hello World!";
-    echo "</h1>";
-    $tekst = "Mark";
-    echo $tekst;
-
+//päis
+    include("header.php");
 ?>
+
+<?php
+//navigeerimismenüü
+include("nav.php");
+?>
+<main>
+    <section>
+
+    </section>
+</main>
+
+
+<?php
+//jalus
+include("footer.php");
+?>
+
+</body>
+</html>
+
