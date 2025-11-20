@@ -31,6 +31,13 @@
                 </a>
             </strong>
         </li>
+        <li>
+            <strong>
+                <a href="?link=tekstfunktsioonid.php">
+                    TextFunktsioonid
+                </a>
+            </strong>
+        </li>
 
     </ul>
 </nav>
