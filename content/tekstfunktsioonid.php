@@ -1,3 +1,16 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <title>Tekst Funkstsioonid</title>
+
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+
+
+<div class="flex-container">
+    <div>
 <?php
 
 function clearVarsExcept($url, $varname)
@@ -37,6 +50,10 @@ echo "ltrim() eemaldab tekstist tühikuid vasakult".ltrim($tekst2);
 echo "<br>";
 echo "rtrim() eemaldab tekstist tühikuid paremalt".rtrim($tekst2);
 echo "<br>";
+?>
+    </div>
+    <div>
+<?php
 echo "<h3>Tekst kui maasiv</h3>";
 echo "$tekst[0] - 1.täht massivist";
 echo "<br>";
@@ -47,6 +64,11 @@ echo "<br>";
 $syna=str_word_count($tekst,1);
 echo "massivist teine sõna - ".$syna[2];
 echo "<br>";
+?>
+    </div>
+
+     <div>
+<?php
 echo "<h2>Teksti asendamine - replace</h2>";
 $asendus= 'Javascript';
 echo substr_replace($tekst,$asendus,0,3);
@@ -57,6 +79,11 @@ $asendav=array('Javascript', 'kliendipoolne');
 echo str_replace($otsi, $asendav, $tekst);
 
 echo "<br>";
+?>
+     </div>
+
+    <div>
+<?php
 echo"<h2>Mõistatus. Arva ära Eesti linnanimi</h2>";
 //tee 5 - 6 tekstfunkstioonid mis aitavad aru saada milinne linnanimi oli.
 $linn='Tallinn';
@@ -67,12 +94,15 @@ $synavah = array("T", "n");
 echo "<li> Linn - ".str_replace($synavah, "_", $linn)."</li></ol>";
 echo "<br>";
 ?>
+    </div>
+    <div>
 <form name="tekskkontroll" action="<?=clearVarsExcept($_SERVER['REQUEST_URI'], "link")?>" method="post">
     <label for="linn">Sisesat Linnanimi: </label>
     <input type="text" id="linn" name="linn">
     <input type="submit" value="Kontrolli">
 </form>
-
+    </div>
+    <div>
 <?php
 if(isset($_REQUEST["linn"])){
     if ($_REQUEST["linn"] == "Tallinn"){
@@ -81,3 +111,11 @@ if(isset($_REQUEST["linn"])){
         echo $_REQUEST["linn"]." on Vale!";
     }
 }
+?>
+</div>
+</div>
+</body>
+</html>
+
+
+
