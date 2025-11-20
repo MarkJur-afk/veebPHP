@@ -1,4 +1,14 @@
 <?php
+
+function clearVarsExcept($url, $varname)
+{
+    $url=basename($url);
+    if(str_starts_with($url,"?")){
+        return "?$varname=".$_REQUEST[$varname];
+    }
+    return strtok($url, "?")."?$varname=".$_REQUEST[$varname];
+}
+
 echo "<h2>Tekstfunkstsioonid</h2>";
 $tekst= 'PHP on skriptikeel serveripoolne';
 echo $tekst;
@@ -57,7 +67,7 @@ $synavah = array("T", "n");
 echo "<li> Linn - ".str_replace($synavah, "_", $linn)."</li></ol>";
 echo "<br>";
 ?>
-<form name="tekskkontroll" action="tekstfunktsioonid.php" method="post">
+<form name="tekskkontroll" action="<?=clearVarsExcept($_SERVER['REQUEST_URI'], "link")?>" method="post">
     <label for="linn">Sisesat Linnanimi: </label>
     <input type="text" id="linn" name="linn">
     <input type="submit" value="Kontrolli">
