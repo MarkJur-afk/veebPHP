@@ -31,6 +31,13 @@
                 </a>
             </strong>
         </li>
+        <li>
+            <strong>
+                <a href="?link=matem_funktsioonid.php">
+                    Matem_funktsioonid
+                </a>
+            </strong>
+        </li>
 
     </ul>
 </nav>
