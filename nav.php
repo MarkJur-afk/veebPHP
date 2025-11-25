@@ -9,6 +9,7 @@
                         <li><a href="?link=ajafunktsioonid.php" class="nav-link">Ajafunktsioonid</a></li>
                         <li><a href="?link=tekstfunktsioonid.php" class="nav-link">Tekstfunktsioonid</a></li>
                         <li><a href="?link=matem_funktsioonid.php" class="nav-link">Matemaatikafunktsioonid</a></li>
+                        <li><a href="?link=pildifunktsioonid.php" class="nav-link">Pildifunktsioonid</a></li>
                     </ul>
                 </li>
                 <li><a href="">JS töö</a>
