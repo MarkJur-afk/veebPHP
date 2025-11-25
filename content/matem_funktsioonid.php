@@ -61,3 +61,53 @@ echo "<br>";
 $format = 'Tere %s %s, arv x: %d';
 printf ($format, $perenimi, $nimi, $x);
 
+echo"<h2>Arv Mõistatus. Arva ära kaks arvu(1, 10) </h2>";
+$arv3 = 3;
+$arv4 = 5;
+echo "Need arvad on Korritused: ".($arv3*$arv4);
+echo "<br>";
+echo "Need arvad on jaagund: ".($arv3/$arv4);
+echo "<br>";
+echo "Need numbrid ruudus: ".($arv3*$arv3)." ja ".($arv4*$arv4);
+echo "<br>";
+echo "Nende liitmine tulemus: ".($arv3+$arv4);
+echo "<br>";
+echo "Nende lahutamine tulemus: ".($arv4-$arv3);
+?>
+
+<form method="post">
+    <label>Esimene arv: </label>
+    <input type="number" name="arv1">
+    <br><br>
+
+    <label>Teine arv: </label>
+    <input type="number" name="arv2">
+    <br><br>
+
+    <input type="submit" value="Kontrolli">
+</form>
+
+<?php
+$oige1 = 3;
+$oige2 = 5;
+
+if(isset($_POST["arv1"]) && isset($_POST["arv2"])) {
+
+    $arv1 = $_POST["arv1"];
+    $arv2 = $_POST["arv2"];
+
+    echo "<h3>Tulemus:</h3>";
+
+    if ($arv1 == $oige1) {
+        echo "Esimene arv ($arv1) on Õige<br>";
+    } else {
+        echo "Esimene arv ($arv1) on Vale!<br>";
+    }
+
+    if ($arv2 == $oige2) {
+        echo "Teine arv ($arv2) on Õige<br>";
+    } else {
+        echo "Teine arv ($arv2) on Vale!<br>";
+    }
+}
+?>

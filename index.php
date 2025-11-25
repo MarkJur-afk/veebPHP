@@ -31,6 +31,7 @@ include("nav.php");
         }
         ?>
     </div>
+
     <br>
     <div>
         <img src="image/gragas.png" alt="pilt"> <br>
