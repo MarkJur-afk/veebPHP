@@ -40,6 +40,35 @@ ul li a:hover {
     color: black;
 }
 
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333333;
+    min-width: 200px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    z-index: 1000;
+    flex-direction: column;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: flex;
+}
+
+.dropdown-menu li {
+    width: 100%;
+}
+
+.dropdown-menu li a {
+    padding: 12px 16px;
+    border-bottom: 1px solid #555;
+}
+
 div.flex-container > div{
     margin: 10px;
     flex: 1;
